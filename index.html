@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ink Analytics Mailing List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css">
+    <style>
+      body { 
+        /* Generated with http://gradient.quasi.ink */
+        background-size: cover;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAADCAYAAABfwxXFAAAAQElEQVQIWz2MyxGAQAxCIUmv2obb0FpgPjt48J2AAbifa7obEQFRVSAJMwPfdY9CGZGZcPevQC0lZojuQoT/DwdIvBjSA48i9QAAAABJRU5ErkJggg==");      }
+      .container {
+        color: white;
+      }
+      .formContainer {
+        margin-top: 100px;
+      }
+      #header {margin-top: 50px}
+      button { 
+        color: orange;
+        background-color: orange;
+        border-color: orange;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1 id="header">Ink Analytics Mailing List</h1>
+    <h4 id="subHeader">Connecting companies with interesting data to bloggers that make data interesting</h4>
+    <div class="row formContainer">
+    <div class="column column-40 companyContainer">
+      <h2 id="companyLabel">Companies</h2> 
+      <form>
+        <fieldset>
+          <label for="companyEmailField">Name</label>
+          <input type="text" placeholder="Your Email" id="companyEmailField">
+          <label for="companyCommentField">Comment</label>
+          <textarea placeholder="What would you like bloggers to write about? Include details about the data and pricing here also." id="companyCommentField"></textarea>
+          <input class="button-primary" type="submit" value="Send">
+        </fieldset>
+      </form>
+    </div>
+    <div class="column column-40 column-offset-10 bloggerContainer">
+      <h2 id="bloggerLabel">Bloggers</h2> 
+      <form>
+        <fieldset>
+          <label for="bloggerEmailField">Name</label>
+          <input type="text" placeholder="Your Email" id="bloggerEmailField">
+          <input class="button-primary" type="submit" value="Send">
+        </fieldset>
+      </form>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
