@@ -7,52 +7,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css">
     <style>
       body { 
-        /* Generated with http://gradient.quasi.ink */
-        background-size: cover;
-        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAADCAYAAABfwxXFAAAAQElEQVQIWz2MyxGAQAxCIUmv2obb0FpgPjt48J2AAbifa7obEQFRVSAJMwPfdY9CGZGZcPevQC0lZojuQoT/DwdIvBjSA48i9QAAAABJRU5ErkJggg==");      }
-      .container {
-        color: white;
+        background-color: #E8E8E8;
+      }
+      .textarea:focus {
+        border: 1px solid green;
       }
       .formContainer {
         margin-top: 100px;
       }
-      #header {margin-top: 50px}
-      button { 
-        color: orange;
-        background-color: orange;
-        border-color: orange;
+      #logoContainer {
+        display: flex;
+        align-items: flex-start;
+      }
+      #logo {
+        width: 80px;
+      }
+      #headerContainer {
+       margin-left: 0px;
+      }
+
+      #header {
+        margin-left: 20px;
+      }
+      #subHeader {
+        width: 600px;
+        margin-top: 20px;
+      }
+
+      .button-green {
+        background-color: #227791;
+        border-color: #227791;
+      }
+      .button-green.button-outline {
+        color: #227791;
+      }
+      .button-green.button-clear {
+        color: #227791;
       }
 
     </style>
   </head>
   <body>
     <div class="container">
-    <h1 id="header">Ink Analytics Mailing List</h1>
+    <div id="headerContainer">
+    <div id="logoContainer">
+    <img id="logo" src="logo.png">
+    <h1 id="header">Ink Analytics</h1>
+    </div>
     <h4 id="subHeader">Connecting companies with interesting data to bloggers that make data interesting</h4>
+    </div>
     <div class="row formContainer">
     <div class="column column-40 companyContainer">
       <h2 id="companyLabel">Companies</h2> 
       <form>
         <fieldset>
-          <label for="companyEmailField">Name</label>
-          <input type="text" placeholder="Your Email" id="companyEmailField">
+          <label for="companyEmailField">Email Address</label>
+          <input type="text" placeholder="Provided to interested bloggers" id="companyEmailField">
           <label for="companyCommentField">Comment</label>
           <textarea placeholder="What would you like bloggers to write about? Include details about the data and pricing here also." id="companyCommentField"></textarea>
-          <input class="button-primary" type="submit" value="Send">
+          <input class="button button-green" value="Send">
         </fieldset>
       </form>
     </div>
-    <div class="column column-40 column-offset-10 bloggerContainer">
+    <div class="column column-40 bloggerContainer">
       <h2 id="bloggerLabel">Bloggers</h2> 
       <form>
         <fieldset>
-          <label for="bloggerEmailField">Name</label>
-          <input type="text" placeholder="Your Email" id="bloggerEmailField">
-          <input class="button-primary" type="submit" value="Send">
+          <label for="bloggerEmailField">Email Address</label>
+          <input type="text" placeholder="Sign up to receive regular mailings" id="bloggerEmailField">
+          <input class="button button-green" value="Send">
         </fieldset>
       </form>
     </div>
     </div>
     </div>
+    <script src="./bundle.js"></script>
   </body>
 </html>
