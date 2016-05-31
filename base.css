@@ -1,11 +1,11 @@
 body { 
   background-color: #E8E8E8;
 }
-.textarea:focus {
-  border: 1px solid green;
+textarea:focus, input[type='text']:focus {
+  border: 0.1rem solid #227791;
 }
 #formContainer {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #logoContainer {
   display: flex;
