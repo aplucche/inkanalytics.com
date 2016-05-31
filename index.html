@@ -1,54 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Ink Analytics Mailing List</title>
+    <meta charset="utf-8">
+    <title>Ink Analytics</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css">
-    <style>
-      body { 
-        background-color: #E8E8E8;
-      }
-      .textarea:focus {
-        border: 1px solid green;
-      }
-      #formContainer {
-        margin-top: 100px;
-      }
-      #logoContainer {
-        display: flex;
-        align-items: flex-start;
-      }
-      #logo {
-        width: 80px;
-      }
-      #headerContainer {
-       margin-left: 0px;
-      }
-
-      #header {
-        margin-left: 20px;
-      }
-      #subHeader {
-        width: 600px;
-        margin-top: 20px;
-      }
-
-      .button-green {
-        background-color: #227791;
-        border-color: #227791;
-      }
-      .button-green.button-outline {
-        color: #227791;
-      }
-      .button-green.button-clear {
-        color: #227791;
-      }
-      #submitMessage {
-        color: coral;
-      }
-
-    </style>
+    <link rel="stylesheet" href="base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="container">
@@ -58,8 +17,9 @@
     <h1 id="header">Ink Analytics</h1>
     </div>
     <h4 id="subHeader">Connecting companies with interesting data to bloggers that make data interesting</h4>
-    </div>
     <h4 id="submitMessage"></h4>
+    </div>
+    
     <div class="row" id="formContainer">
     <div class="column column-40 companyContainer">
       <h2 id="companyLabel">Companies</h2> 
@@ -68,7 +28,7 @@
           <label for="companyEmailField">Email Address</label>
           <input type="text" placeholder="Provided to interested bloggers" id="companyEmailField">
           <label for="companyCommentField">Comment</label>
-          <textarea placeholder="What would you like bloggers to write about? Include details about the data and pricing here also." id="companyCommentField"></textarea>
+          <textarea placeholder="What would you like bloggers to write about? Include details about the data and payment here also." id="companyCommentField"></textarea>
           <input class="button button-green" id='companySubmit' value="Send">
         </fieldset>
       </form>
