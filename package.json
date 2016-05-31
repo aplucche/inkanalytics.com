@@ -1,8 +1,8 @@
 {
   "dependencies": {
+    "whatwg-fetch": "^1.0.0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "watch": "watchify -v -d index.js -t [ babelify --presets [ es2015 ] ] -o bundle.js",
     "build": "browserify index.js -t [ babelify --presets [ es2015 ] ] | uglifyjs -mc warnings=false > bundle.js"
