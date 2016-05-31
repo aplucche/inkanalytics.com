@@ -12,7 +12,7 @@
       .textarea:focus {
         border: 1px solid green;
       }
-      .formContainer {
+      #formContainer {
         margin-top: 100px;
       }
       #logoContainer {
@@ -44,6 +44,9 @@
       .button-green.button-clear {
         color: #227791;
       }
+      #submitMessage {
+        color: coral;
+      }
 
     </style>
   </head>
@@ -56,10 +59,11 @@
     </div>
     <h4 id="subHeader">Connecting companies with interesting data to bloggers that make data interesting</h4>
     </div>
-    <div class="row formContainer">
+    <h4 id="submitMessage"></h4>
+    <div class="row" id="formContainer">
     <div class="column column-40 companyContainer">
       <h2 id="companyLabel">Companies</h2> 
-      <form>
+      <form id="companyForm">
         <fieldset>
           <label for="companyEmailField">Email Address</label>
           <input type="text" placeholder="Provided to interested bloggers" id="companyEmailField">
@@ -71,7 +75,7 @@
     </div>
     <div class="column column-40 bloggerContainer">
       <h2 id="bloggerLabel">Bloggers</h2> 
-      <form>
+      <form id="bloggerForm">
         <fieldset>
           <label for="bloggerEmailField">Email Address</label>
           <input type="text" placeholder="Sign up to receive regular mailings" id="bloggerEmailField">
