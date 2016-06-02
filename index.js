@@ -5,12 +5,10 @@ export default function main() {
   bloggerEl.onclick = function() { sendMail('blogger'); }
   var companyEl = document.getElementById('companySubmit')
   companyEl.onclick = function() { sendMail('company'); }
-  console.log('this has loaded.')
   return
 }
 
 function sendMail(submitType) {
-  console.log('clicked' + submitType)
   var body = {}
   var submitMessage = ''
   if (submitType === 'blogger') {
